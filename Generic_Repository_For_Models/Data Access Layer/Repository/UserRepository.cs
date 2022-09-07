@@ -1,6 +1,7 @@
 ﻿using Generic_Repository_For_Models.Data_Access_Layer.AppDbContext;
 using Generic_Repository_For_Models.Model;
 using Microsoft.EntityFrameworkCore;
+using System.Linq.Expressions;
 
 namespace Generic_Repository_For_Models.Data_Access_Layer.Repository
 {
@@ -19,6 +20,12 @@ namespace Generic_Repository_For_Models.Data_Access_Layer.Repository
             return (IEnumerable<T>)await _entities.ToListAsync();
 
         }
-        
+
+        public async Task<T> FindByConditionAsync(Expression<Func<T, bool>> predicate)
+        {
+            return await _context.Set<T>().FirstOrDefaultAsync(predicate);
+        }
+
+
     }
 }

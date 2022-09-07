@@ -19,10 +19,10 @@ builder.Services.AddDbContext<PersonDbContext>(
     });
 
 builder.Services.AddScoped(typeof(IUserService<>), typeof(UserService<>));
-//builder.Services.AddScoped(typeof(IUserService<Employee>), typeof(UserService<Employee>));
+
 
 builder.Services.AddScoped(typeof(IUserRepository<>), typeof(UserRepository<>));
-//builder.Services.AddScoped(typeof(IUserRepository<Employee>), typeof(IUserRepository<Employee>));
+
 
 var app = builder.Build();
 

@@ -16,17 +16,26 @@ namespace Generic_Repository_For_Models.Controllers
             _UserServiceStudent = userServiceStudent;
             _UserServiceEmployee = userServiceEmployee;
         }
+
         [Route("Student")]
         [HttpGet]
         public async Task<IEnumerable<Student>> getStudentInfo()
         {
             return await _UserServiceStudent.GetAllUser();
         }
+
         [Route("Emplyee")]
         [HttpGet]
         public async Task<IEnumerable<Employee>> getEmployeeInfo()
         {
             return await _UserServiceEmployee.GetAllUser();
+        }
+
+        [Route("StudentByName/{Name}")]
+        [HttpGet]
+        public async Task<Student> findByName(string Name)
+        {
+            return await _UserServiceStudent.findByName(a => a.Name == Name);
         }
     }
 }
