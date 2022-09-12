@@ -1,4 +1,4 @@
-﻿namespace Generic_Repository_For_Models.Model
+﻿namespace GenericRepository.Model
 {
     public class Employee : BaseEntity
     {

@@ -1,8 +1,10 @@
-using Generic_Repository_For_Models.Data_Access_Layer.AppDbContext;
-using Generic_Repository_For_Models.Data_Access_Layer.Repository;
-using Generic_Repository_For_Models.Model;
-using Generic_Repository_For_Models.Services;
+using GenericRepository.DataAccessLayer.ApplicationDbContext;
+using GenericRepository.DataAccessLayer.Repository;
+using GenericRepository.Model;
+using GenericRepository.Services;
 using Microsoft.EntityFrameworkCore;
+using System.Reflection;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,17 +14,16 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddDbContext<PersonDbContext>(
+
+builder.Services.AddDbContext<AppDbContext>(
     options =>
     {
         options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
     });
 
-builder.Services.AddScoped(typeof(IUserService<>), typeof(UserService<>));
+builder.Services.AddScoped(typeof(IGenericService<>), typeof(GenericService<>));
 
-
-builder.Services.AddScoped(typeof(IUserRepository<>), typeof(UserRepository<>));
-
+builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 
 var app = builder.Build();
 

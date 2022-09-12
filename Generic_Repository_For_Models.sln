@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generic_Repository_For_Models", "Generic_Repository_For_Models\Generic_Repository_For_Models.csproj", "{32EDAE85-C59A-49F0-B416-0B6B9998FD37}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericRepository", "Generic_Repository_For_Models\GenericRepository.csproj", "{32EDAE85-C59A-49F0-B416-0B6B9998FD37}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
