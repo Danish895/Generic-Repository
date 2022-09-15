@@ -4,40 +4,80 @@ using GenericRepository.Model;
 using GenericRepository.Services;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
+using System;
+using Serilog;
+using Serilog.Events;
+
+Log.Logger = new LoggerConfiguration()
+            .MinimumLevel.Override("Microsoft", LogEventLevel.Information)
+            .Enrich.FromLogContext()
+            .WriteTo.Console()
+            .CreateBootstrapLogger();
+try
+{
+
+    var builder = WebApplication.CreateBuilder(args);
+
+    // Full setup of serilog. We read log settings from appsettings.json
+    builder.Host.UseSerilog((context, services, configuration) => configuration
+        .ReadFrom.Configuration(context.Configuration)
+        .ReadFrom.Services(services)
+        .Enrich.FromLogContext());
 
 
-var builder = WebApplication.CreateBuilder(args);
+    // Add services to the container.
 
-// Add services to the container.
+    builder.Services.AddControllers();
+    // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+    builder.Services.AddEndpointsApiExplorer();
+    builder.Services.AddSwaggerGen();
 
-builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+    builder.Services.AddDbContext<AppDbContext>(
+        options =>
+        {
+            options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+        });
 
-builder.Services.AddDbContext<AppDbContext>(
-    options =>
+    builder.Services.AddScoped(typeof(IGenericService<>), typeof(GenericService<>));
+
+    builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+
+    var app = builder.Build();
+
+    // Configure the HTTP request pipeline.
+    app.UseSerilogRequestLogging(configure =>
     {
-        options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+        configure.MessageTemplate = "HTTP {RequestMethod} {RequestPath} ({UserId}) responded {StatusCode} in {Elapsed:0.0000}ms";
+    }); // We want to log all HTTP requests
+
+    // Configure the HTTP request pipeline.
+    if (app.Environment.IsDevelopment())
+    {
+        app.UseSwagger();
+        app.UseSwaggerUI();
+    }
+
+    app.UseHttpsRedirection();
+
+    app.UseAuthorization();
+
+    app.MapControllers();
+
+    app.MapGet("/request-context", (IDiagnosticContext diagnosticContext) =>
+    {
+        diagnosticContext.Set("UserId", "Danish");
     });
 
-builder.Services.AddScoped(typeof(IGenericService<>), typeof(GenericService<>));
+    app.Run();
 
-builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
-
-var app = builder.Build();
-
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
 }
-
-app.UseHttpsRedirection();
-
-app.UseAuthorization();
-
-app.MapControllers();
-
-app.Run();
+catch(Exception ex)
+{
+    Log.Fatal(ex, "Host terminated unexpectedly");
+    return 1;
+}
+finally
+{
+    Log.CloseAndFlush();
+}
+return 0;

@@ -1,0 +1,964 @@
+2022-09-15 12:05:01.024 +05:30 [INF] Now listening on: https://localhost:7028
+2022-09-15 12:05:01.047 +05:30 [INF] Now listening on: http://localhost:5028
+2022-09-15 12:05:01.054 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-15 12:05:01.056 +05:30 [INF] Hosting environment: Development
+2022-09-15 12:05:01.056 +05:30 [INF] Content root path: C:\Users\danis\source\repos\Generic_Repository_For_Models\Generic_Repository_For_Models\
+2022-09-15 12:05:01.949 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/index.html - -
+2022-09-15 12:05:02.394 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - -
+2022-09-15 12:05:02.396 +05:30 [INF] HTTP GET /swagger/index.html ({UserId}) responded 200 in 242.0085ms
+2022-09-15 12:05:02.402 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 6.7553ms
+2022-09-15 12:05:02.411 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_vs/browserLink - -
+2022-09-15 12:05:02.435 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/index.html - - - 200 - text/html;charset=utf-8 491.3217ms
+2022-09-15 12:05:02.542 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 130.6556ms
+2022-09-15 12:05:02.600 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - -
+2022-09-15 12:05:02.761 +05:30 [INF] HTTP GET /swagger/v1/swagger.json ({UserId}) responded 200 in 158.8216ms
+2022-09-15 12:05:02.763 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 162.2229ms
+2022-09-15 12:14:18.432 +05:30 [INF] Now listening on: https://localhost:7028
+2022-09-15 12:14:18.450 +05:30 [INF] Now listening on: http://localhost:5028
+2022-09-15 12:14:18.455 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-15 12:14:18.455 +05:30 [INF] Hosting environment: Development
+2022-09-15 12:14:18.457 +05:30 [INF] Content root path: C:\Users\danis\source\repos\Generic_Repository_For_Models\Generic_Repository_For_Models\
+2022-09-15 12:14:18.695 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/index.html - -
+2022-09-15 12:14:18.833 +05:30 [INF] HTTP GET /swagger/index.html ({UserId}) responded 200 in 98.7049ms
+2022-09-15 12:14:18.839 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/index.html - - - 200 - text/html;charset=utf-8 146.1511ms
+2022-09-15 12:14:18.847 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - -
+2022-09-15 12:14:18.850 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 3.3642ms
+2022-09-15 12:14:18.869 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_vs/browserLink - -
+2022-09-15 12:14:18.880 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 11.1357ms
+2022-09-15 12:14:19.110 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - -
+2022-09-15 12:14:19.186 +05:30 [INF] HTTP GET /swagger/v1/swagger.json ({UserId}) responded 200 in 73.6336ms
+2022-09-15 12:14:19.188 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 78.0126ms
+2022-09-15 12:14:27.121 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/api/User/GetAllStudents - -
+2022-09-15 12:14:27.130 +05:30 [INF] Executing endpoint 'GenericRepository.Controllers.UserController.GetStudentAsync (GenericRepository)'
+2022-09-15 12:14:27.143 +05:30 [INF] Route matched with {action = "GetStudent", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[GenericRepository.Model.Student]] GetStudentAsync() on controller GenericRepository.Controllers.UserController (GenericRepository).
+2022-09-15 12:14:27.620 +05:30 [INF] Entity Framework Core 6.0.8 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.8' with options: None
+2022-09-15 12:14:28.164 +05:30 [INF] Executed DbCommand (33ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Class], [s].[Marks], [s].[Name]
+FROM [Students] AS [s]
+2022-09-15 12:14:28.217 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[GenericRepository.Model.Student, GenericRepository, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-15 12:14:28.225 +05:30 [INF] Executed action GenericRepository.Controllers.UserController.GetStudentAsync (GenericRepository) in 1075.48ms
+2022-09-15 12:14:28.228 +05:30 [INF] Executed endpoint 'GenericRepository.Controllers.UserController.GetStudentAsync (GenericRepository)'
+2022-09-15 12:14:28.229 +05:30 [INF] HTTP GET /api/User/GetAllStudents ({UserId}) responded 200 in 1105.4687ms
+2022-09-15 12:14:28.233 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/api/User/GetAllStudents - - - 200 - application/json;+charset=utf-8 1112.6360ms
+2022-09-15 12:14:56.690 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/api/User/GetAllStudents - -
+2022-09-15 12:14:56.694 +05:30 [INF] Executing endpoint 'GenericRepository.Controllers.UserController.GetStudentAsync (GenericRepository)'
+2022-09-15 12:14:56.697 +05:30 [INF] Route matched with {action = "GetStudent", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[GenericRepository.Model.Student]] GetStudentAsync() on controller GenericRepository.Controllers.UserController (GenericRepository).
+2022-09-15 12:14:56.733 +05:30 [INF] Entity Framework Core 6.0.8 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.8' with options: None
+2022-09-15 12:14:56.741 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Class], [s].[Marks], [s].[Name]
+FROM [Students] AS [s]
+2022-09-15 12:14:56.746 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[GenericRepository.Model.Student, GenericRepository, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-15 12:14:56.748 +05:30 [INF] Executed action GenericRepository.Controllers.UserController.GetStudentAsync (GenericRepository) in 48.3796ms
+2022-09-15 12:14:56.749 +05:30 [INF] Executed endpoint 'GenericRepository.Controllers.UserController.GetStudentAsync (GenericRepository)'
+2022-09-15 12:14:56.750 +05:30 [INF] HTTP GET /api/User/GetAllStudents ({UserId}) responded 200 in 55.8689ms
+2022-09-15 12:14:56.752 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/api/User/GetAllStudents - - - 200 - application/json;+charset=utf-8 61.7387ms
+2022-09-15 12:16:23.937 +05:30 [INF] Now listening on: https://localhost:7028
+2022-09-15 12:16:23.962 +05:30 [INF] Now listening on: http://localhost:5028
+2022-09-15 12:16:23.970 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-15 12:16:23.971 +05:30 [INF] Hosting environment: Development
+2022-09-15 12:16:23.971 +05:30 [INF] Content root path: C:\Users\danis\source\repos\Generic_Repository_For_Models\Generic_Repository_For_Models\
+2022-09-15 12:16:24.583 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/index.html - -
+2022-09-15 12:16:24.814 +05:30 [INF] HTTP GET /swagger/index.html ({UserId}) responded 200 in 180.4176ms
+2022-09-15 12:16:24.826 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - -
+2022-09-15 12:16:24.832 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 5.2367ms
+2022-09-15 12:16:24.832 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/index.html - - - 200 - text/html;charset=utf-8 252.0291ms
+2022-09-15 12:16:24.845 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_vs/browserLink - -
+2022-09-15 12:16:24.869 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 23.9406ms
+2022-09-15 12:16:24.994 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - -
+2022-09-15 12:16:25.104 +05:30 [INF] HTTP GET /swagger/v1/swagger.json ({UserId}) responded 200 in 109.3308ms
+2022-09-15 12:16:25.108 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 114.2082ms
+2022-09-15 12:16:36.303 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/api/User/GetAllStudents - -
+2022-09-15 12:16:36.316 +05:30 [INF] Executing endpoint 'GenericRepository.Controllers.UserController.GetStudentAsync (GenericRepository)'
+2022-09-15 12:16:36.333 +05:30 [INF] Route matched with {action = "GetStudent", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[GenericRepository.Model.Student]] GetStudentAsync() on controller GenericRepository.Controllers.UserController (GenericRepository).
+2022-09-15 12:16:37.037 +05:30 [INF] Entity Framework Core 6.0.8 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.8' with options: None
+2022-09-15 12:16:37.041 +05:30 [INF] I am inside Log
+2022-09-15 12:16:37.941 +05:30 [INF] Executed DbCommand (102ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Class], [s].[Marks], [s].[Name]
+FROM [Students] AS [s]
+2022-09-15 12:16:38.152 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[GenericRepository.Model.Student, GenericRepository, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-15 12:16:38.163 +05:30 [INF] Executed action GenericRepository.Controllers.UserController.GetStudentAsync (GenericRepository) in 1822.096ms
+2022-09-15 12:16:38.165 +05:30 [INF] Executed endpoint 'GenericRepository.Controllers.UserController.GetStudentAsync (GenericRepository)'
+2022-09-15 12:16:38.167 +05:30 [INF] HTTP GET /api/User/GetAllStudents ({UserId}) responded 200 in 1859.6513ms
+2022-09-15 12:16:38.191 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/api/User/GetAllStudents - - - 200 - application/json;+charset=utf-8 1887.8837ms
+2022-09-15 12:19:42.057 +05:30 [INF] Now listening on: https://localhost:7028
+2022-09-15 12:19:42.073 +05:30 [INF] Now listening on: http://localhost:5028
+2022-09-15 12:19:42.076 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-15 12:19:42.077 +05:30 [INF] Hosting environment: Development
+2022-09-15 12:19:42.078 +05:30 [INF] Content root path: C:\Users\danis\source\repos\Generic_Repository_For_Models\Generic_Repository_For_Models\
+2022-09-15 12:19:42.298 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/index.html - -
+2022-09-15 12:19:42.432 +05:30 [INF] HTTP GET /swagger/index.html ({UserId}) responded 200 in 97.8549ms
+2022-09-15 12:19:42.438 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - -
+2022-09-15 12:19:42.441 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/index.html - - - 200 - text/html;charset=utf-8 144.6990ms
+2022-09-15 12:19:42.443 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 4.9886ms
+2022-09-15 12:19:42.463 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_vs/browserLink - -
+2022-09-15 12:19:42.472 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 8.8987ms
+2022-09-15 12:19:42.689 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - -
+2022-09-15 12:19:42.758 +05:30 [INF] HTTP GET /swagger/v1/swagger.json ({UserId}) responded 200 in 66.9420ms
+2022-09-15 12:19:42.762 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 72.9548ms
+2022-09-15 12:19:48.244 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/api/User/GetAllStudents - -
+2022-09-15 12:19:48.251 +05:30 [INF] Executing endpoint 'GenericRepository.Controllers.UserController.GetStudentAsync (GenericRepository)'
+2022-09-15 12:19:48.265 +05:30 [INF] Route matched with {action = "GetStudent", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[GenericRepository.Model.Student]] GetStudentAsync() on controller GenericRepository.Controllers.UserController (GenericRepository).
+2022-09-15 12:19:48.683 +05:30 [INF] Entity Framework Core 6.0.8 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.8' with options: None
+2022-09-15 12:19:48.687 +05:30 [INF] I am inside Log
+2022-09-15 12:19:49.188 +05:30 [INF] Executed DbCommand (35ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Class], [s].[Marks], [s].[Name]
+FROM [Students] AS [s]
+2022-09-15 12:19:49.242 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[GenericRepository.Model.Student, GenericRepository, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-15 12:19:49.249 +05:30 [INF] Executed action GenericRepository.Controllers.UserController.GetStudentAsync (GenericRepository) in 978.8785ms
+2022-09-15 12:19:49.250 +05:30 [INF] Executed endpoint 'GenericRepository.Controllers.UserController.GetStudentAsync (GenericRepository)'
+2022-09-15 12:19:49.251 +05:30 [INF] HTTP GET /api/User/GetAllStudents ({UserId}) responded 200 in 1004.5076ms
+2022-09-15 12:19:49.254 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/api/User/GetAllStudents - - - 200 - application/json;+charset=utf-8 1010.4997ms
+2022-09-15 12:53:13.530 +05:30 [INF] Now listening on: https://localhost:7028
+2022-09-15 12:53:13.559 +05:30 [INF] Now listening on: http://localhost:5028
+2022-09-15 12:53:13.566 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-15 12:53:13.567 +05:30 [INF] Hosting environment: Development
+2022-09-15 12:53:13.568 +05:30 [INF] Content root path: C:\Users\danis\source\repos\Generic_Repository_For_Models\Generic_Repository_For_Models\
+2022-09-15 12:53:14.297 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/index.html - -
+2022-09-15 12:53:14.601 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - -
+2022-09-15 12:53:14.604 +05:30 [INF] HTTP GET /swagger/index.html ({UserId}) responded 200 in 225.0236ms
+2022-09-15 12:53:14.609 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 7.0484ms
+2022-09-15 12:53:14.629 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_vs/browserLink - -
+2022-09-15 12:53:14.630 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/index.html - - - 200 - text/html;charset=utf-8 337.3835ms
+2022-09-15 12:53:14.646 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 17.1885ms
+2022-09-15 12:53:14.746 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - -
+2022-09-15 12:53:14.885 +05:30 [INF] HTTP GET /swagger/v1/swagger.json ({UserId}) responded 200 in 138.1588ms
+2022-09-15 12:53:14.890 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 143.8837ms
+2022-09-15 12:55:56.569 +05:30 [INF] Now listening on: https://localhost:7028
+2022-09-15 12:55:56.605 +05:30 [INF] Now listening on: http://localhost:5028
+2022-09-15 12:55:56.612 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-15 12:55:56.614 +05:30 [INF] Hosting environment: Development
+2022-09-15 12:55:56.615 +05:30 [INF] Content root path: C:\Users\danis\source\repos\Generic_Repository_For_Models\Generic_Repository_For_Models\
+2022-09-15 12:55:57.323 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/index.html - -
+2022-09-15 12:55:57.620 +05:30 [INF] HTTP GET /swagger/index.html ({UserId}) responded 200 in 227.3636ms
+2022-09-15 12:55:57.634 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - -
+2022-09-15 12:55:57.638 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/index.html - - - 200 - text/html;charset=utf-8 318.3589ms
+2022-09-15 12:55:57.652 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 18.6722ms
+2022-09-15 12:55:57.668 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_vs/browserLink - -
+2022-09-15 12:55:57.691 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 22.9588ms
+2022-09-15 12:55:57.976 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - -
+2022-09-15 12:55:58.107 +05:30 [INF] HTTP GET /swagger/v1/swagger.json ({UserId}) responded 200 in 129.7287ms
+2022-09-15 12:55:58.112 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 135.3624ms
+2022-09-15 12:56:48.851 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/api/User/GetAllStudents - -
+2022-09-15 12:56:48.877 +05:30 [INF] Executing endpoint 'GenericRepository.Controllers.UserController.GetStudentAsync (GenericRepository)'
+2022-09-15 12:56:48.925 +05:30 [INF] Route matched with {action = "GetStudent", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[GenericRepository.Model.Student]] GetStudentAsync() on controller GenericRepository.Controllers.UserController (GenericRepository).
+2022-09-15 12:56:50.978 +05:30 [INF] Entity Framework Core 6.0.8 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.8' with options: None
+2022-09-15 12:56:50.989 +05:30 [INF] I am inside Log
+2022-09-15 12:56:53.172 +05:30 [INF] Executed DbCommand (177ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Class], [s].[Marks], [s].[Name]
+FROM [Students] AS [s]
+2022-09-15 12:56:53.484 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[GenericRepository.Model.Student, GenericRepository, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-15 12:56:53.510 +05:30 [INF] Executed action GenericRepository.Controllers.UserController.GetStudentAsync (GenericRepository) in 4565.5189ms
+2022-09-15 12:56:53.519 +05:30 [INF] Executed endpoint 'GenericRepository.Controllers.UserController.GetStudentAsync (GenericRepository)'
+2022-09-15 12:56:53.528 +05:30 [INF] HTTP GET /api/User/GetAllStudents ({UserId}) responded 200 in 4668.0531ms
+2022-09-15 12:56:53.555 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/api/User/GetAllStudents - - - 200 - application/json;+charset=utf-8 4707.6028ms
+2022-09-15 13:04:58.552 +05:30 [INF] Now listening on: https://localhost:7028
+2022-09-15 13:04:58.575 +05:30 [INF] Now listening on: http://localhost:5028
+2022-09-15 13:04:58.582 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-15 13:04:58.584 +05:30 [INF] Hosting environment: Development
+2022-09-15 13:04:58.585 +05:30 [INF] Content root path: C:\Users\danis\source\repos\Generic_Repository_For_Models\Generic_Repository_For_Models\
+2022-09-15 13:04:59.033 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/index.html - -
+2022-09-15 13:04:59.326 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - -
+2022-09-15 13:04:59.326 +05:30 [INF] HTTP GET /swagger/index.html ({UserId}) responded 200 in 221.8589ms
+2022-09-15 13:04:59.336 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 8.3121ms
+2022-09-15 13:04:59.350 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/index.html - - - 200 - text/html;charset=utf-8 320.6062ms
+2022-09-15 13:04:59.357 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_vs/browserLink - -
+2022-09-15 13:04:59.377 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 20.5811ms
+2022-09-15 13:04:59.500 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - -
+2022-09-15 13:04:59.633 +05:30 [INF] HTTP GET /swagger/v1/swagger.json ({UserId}) responded 200 in 132.3894ms
+2022-09-15 13:04:59.638 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 138.3896ms
+2022-09-15 13:05:05.169 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/api/User/GetAllStudents - -
+2022-09-15 13:05:05.185 +05:30 [INF] Executing endpoint 'GenericRepository.Controllers.UserController.GetStudentAsync (GenericRepository)'
+2022-09-15 13:05:05.203 +05:30 [INF] Route matched with {action = "GetStudent", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[GenericRepository.Model.Student]] GetStudentAsync() on controller GenericRepository.Controllers.UserController (GenericRepository).
+2022-09-15 13:05:05.995 +05:30 [INF] Entity Framework Core 6.0.8 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.8' with options: None
+2022-09-15 13:05:06.005 +05:30 [INF] I am inside Log
+2022-09-15 13:05:06.403 +05:30 [INF] Executed DbCommand (44ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Class], [s].[Marks], [s].[Name]
+FROM [Students] AS [s]
+2022-09-15 13:05:06.525 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[GenericRepository.Model.Student, GenericRepository, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-15 13:05:06.543 +05:30 [INF] Executed action GenericRepository.Controllers.UserController.GetStudentAsync (GenericRepository) in 1327.78ms
+2022-09-15 13:05:06.546 +05:30 [INF] Executed endpoint 'GenericRepository.Controllers.UserController.GetStudentAsync (GenericRepository)'
+2022-09-15 13:05:06.551 +05:30 [INF] HTTP GET /api/User/GetAllStudents ({UserId}) responded 200 in 1375.6027ms
+2022-09-15 13:05:06.561 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/api/User/GetAllStudents - - - 200 - application/json;+charset=utf-8 1392.5467ms
+2022-09-15 13:18:16.447 +05:30 [INF] Now listening on: https://localhost:7028
+2022-09-15 13:18:16.473 +05:30 [INF] Now listening on: http://localhost:5028
+2022-09-15 13:18:16.479 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-15 13:18:16.481 +05:30 [INF] Hosting environment: Development
+2022-09-15 13:18:16.481 +05:30 [INF] Content root path: C:\Users\danis\source\repos\Generic_Repository_For_Models\Generic_Repository_For_Models\
+2022-09-15 13:18:17.228 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/index.html - -
+2022-09-15 13:18:17.469 +05:30 [INF] HTTP GET /swagger/index.html ({UserId}) responded 200 in 194.7100ms
+2022-09-15 13:18:17.484 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - -
+2022-09-15 13:18:17.486 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/index.html - - - 200 - text/html;charset=utf-8 260.7770ms
+2022-09-15 13:18:17.498 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 13.4154ms
+2022-09-15 13:18:17.554 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_vs/browserLink - -
+2022-09-15 13:18:17.574 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 20.3162ms
+2022-09-15 13:18:17.825 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - -
+2022-09-15 13:18:17.949 +05:30 [INF] HTTP GET /swagger/v1/swagger.json ({UserId}) responded 200 in 122.4836ms
+2022-09-15 13:18:17.952 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 126.7958ms
+2022-09-15 13:18:22.185 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/api/User/GetAllStudents - -
+2022-09-15 13:18:22.211 +05:30 [INF] Executing endpoint 'GenericRepository.Controllers.UserController.GetStudentAsync (GenericRepository)'
+2022-09-15 13:18:22.256 +05:30 [INF] Route matched with {action = "GetStudent", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[GenericRepository.Model.Student]] GetStudentAsync() on controller GenericRepository.Controllers.UserController (GenericRepository).
+2022-09-15 13:18:24.323 +05:30 [INF] Entity Framework Core 6.0.8 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.8' with options: None
+2022-09-15 13:18:24.340 +05:30 [INF] I am inside Log
+2022-09-15 13:18:25.309 +05:30 [INF] Executed DbCommand (98ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Class], [s].[Marks], [s].[Name]
+FROM [Students] AS [s]
+2022-09-15 13:18:25.591 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[GenericRepository.Model.Student, GenericRepository, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-15 13:18:25.617 +05:30 [INF] Executed action GenericRepository.Controllers.UserController.GetStudentAsync (GenericRepository) in 3343.6503ms
+2022-09-15 13:18:25.623 +05:30 [INF] Executed endpoint 'GenericRepository.Controllers.UserController.GetStudentAsync (GenericRepository)'
+2022-09-15 13:18:25.627 +05:30 [INF] HTTP GET /api/User/GetAllStudents ({UserId}) responded 200 in 3433.6457ms
+2022-09-15 13:18:25.653 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/api/User/GetAllStudents - - - 200 - application/json;+charset=utf-8 3468.5487ms
+2022-09-15 13:21:55.047 +05:30 [INF] Now listening on: https://localhost:7028
+2022-09-15 13:21:55.079 +05:30 [INF] Now listening on: http://localhost:5028
+2022-09-15 13:21:55.090 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-15 13:21:55.092 +05:30 [INF] Hosting environment: Development
+2022-09-15 13:21:55.093 +05:30 [INF] Content root path: C:\Users\danis\source\repos\Generic_Repository_For_Models\Generic_Repository_For_Models\
+2022-09-15 13:21:55.487 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/index.html - -
+2022-09-15 13:21:55.733 +05:30 [INF] HTTP GET /swagger/index.html ({UserId}) responded 200 in 184.1191ms
+2022-09-15 13:21:55.745 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - -
+2022-09-15 13:21:55.754 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 7.8419ms
+2022-09-15 13:21:55.754 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/index.html - - - 200 - text/html;charset=utf-8 271.2097ms
+2022-09-15 13:21:55.771 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_vs/browserLink - -
+2022-09-15 13:21:55.800 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 28.8560ms
+2022-09-15 13:21:56.097 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - -
+2022-09-15 13:21:56.221 +05:30 [INF] HTTP GET /swagger/v1/swagger.json ({UserId}) responded 200 in 121.2865ms
+2022-09-15 13:21:56.227 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 129.2609ms
+2022-09-15 13:22:00.935 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/api/User/GetAllStudents - -
+2022-09-15 13:22:00.959 +05:30 [INF] Executing endpoint 'GenericRepository.Controllers.UserController.GetStudentAsync (GenericRepository)'
+2022-09-15 13:22:01.013 +05:30 [INF] Route matched with {action = "GetStudent", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[GenericRepository.Model.Student]] GetStudentAsync() on controller GenericRepository.Controllers.UserController (GenericRepository).
+2022-09-15 13:22:03.195 +05:30 [INF] Entity Framework Core 6.0.8 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.8' with options: None
+2022-09-15 13:22:03.206 +05:30 [INF] I am inside Log
+2022-09-15 13:22:04.146 +05:30 [INF] Executed DbCommand (99ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Class], [s].[Marks], [s].[Name]
+FROM [Students] AS [s]
+2022-09-15 13:22:04.434 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[GenericRepository.Model.Student, GenericRepository, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-15 13:22:04.458 +05:30 [INF] Executed action GenericRepository.Controllers.UserController.GetStudentAsync (GenericRepository) in 3431.8334ms
+2022-09-15 13:22:04.463 +05:30 [INF] Executed endpoint 'GenericRepository.Controllers.UserController.GetStudentAsync (GenericRepository)'
+2022-09-15 13:22:04.468 +05:30 [INF] HTTP GET /api/User/GetAllStudents ({UserId}) responded 200 in 3524.3342ms
+2022-09-15 13:22:04.490 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/api/User/GetAllStudents - - - 200 - application/json;+charset=utf-8 3554.6119ms
+2022-09-15 13:24:17.590 +05:30 [INF] Now listening on: https://localhost:7028
+2022-09-15 13:24:17.625 +05:30 [INF] Now listening on: http://localhost:5028
+2022-09-15 13:24:17.634 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-15 13:24:17.635 +05:30 [INF] Hosting environment: Development
+2022-09-15 13:24:17.636 +05:30 [INF] Content root path: C:\Users\danis\source\repos\Generic_Repository_For_Models\Generic_Repository_For_Models\
+2022-09-15 13:24:18.139 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/index.html - -
+2022-09-15 13:24:18.415 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - -
+2022-09-15 13:24:18.416 +05:30 [INF] HTTP GET /swagger/index.html ({UserId}) responded 200 in 206.6600ms
+2022-09-15 13:24:18.424 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 8.2407ms
+2022-09-15 13:24:18.431 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_vs/browserLink - -
+2022-09-15 13:24:18.435 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/index.html - - - 200 - text/html;charset=utf-8 299.6068ms
+2022-09-15 13:24:18.447 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 15.7286ms
+2022-09-15 13:24:18.550 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - -
+2022-09-15 13:24:18.674 +05:30 [INF] HTTP GET /swagger/v1/swagger.json ({UserId}) responded 200 in 121.7497ms
+2022-09-15 13:24:18.677 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 127.0179ms
+2022-09-15 13:24:34.109 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/api/User/GetAllStudents - -
+2022-09-15 13:24:34.138 +05:30 [INF] Executing endpoint 'GenericRepository.Controllers.UserController.GetStudentAsync (GenericRepository)'
+2022-09-15 13:24:34.184 +05:30 [INF] Route matched with {action = "GetStudent", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[GenericRepository.Model.Student]] GetStudentAsync() on controller GenericRepository.Controllers.UserController (GenericRepository).
+2022-09-15 13:24:36.243 +05:30 [INF] Entity Framework Core 6.0.8 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.8' with options: None
+2022-09-15 13:24:36.256 +05:30 [INF] I am inside Log
+2022-09-15 13:24:37.193 +05:30 [INF] Executed DbCommand (107ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Class], [s].[Marks], [s].[Name]
+FROM [Students] AS [s]
+2022-09-15 13:24:37.488 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[GenericRepository.Model.Student, GenericRepository, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-15 13:24:37.519 +05:30 [INF] Executed action GenericRepository.Controllers.UserController.GetStudentAsync (GenericRepository) in 3312.5751ms
+2022-09-15 13:24:37.528 +05:30 [INF] Executed endpoint 'GenericRepository.Controllers.UserController.GetStudentAsync (GenericRepository)'
+2022-09-15 13:24:37.536 +05:30 [INF] HTTP GET /api/User/GetAllStudents ({UserId}) responded 200 in 3415.2354ms
+2022-09-15 13:24:37.569 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/api/User/GetAllStudents - - - 200 - application/json;+charset=utf-8 3460.2885ms
+2022-09-15 13:26:26.490 +05:30 [INF] Now listening on: https://localhost:7028
+2022-09-15 13:26:26.527 +05:30 [INF] Now listening on: http://localhost:5028
+2022-09-15 13:26:26.535 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-15 13:26:26.536 +05:30 [INF] Hosting environment: Development
+2022-09-15 13:26:26.537 +05:30 [INF] Content root path: C:\Users\danis\source\repos\Generic_Repository_For_Models\Generic_Repository_For_Models\
+2022-09-15 13:26:26.840 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/index.html - -
+2022-09-15 13:26:27.091 +05:30 [INF] HTTP GET /swagger/index.html ({UserId}) responded 200 in 195.3146ms
+2022-09-15 13:26:27.107 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - -
+2022-09-15 13:26:27.109 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/index.html - - - 200 - text/html;charset=utf-8 273.1115ms
+2022-09-15 13:26:27.119 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 11.7469ms
+2022-09-15 13:26:27.139 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_vs/browserLink - -
+2022-09-15 13:26:27.166 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 27.0417ms
+2022-09-15 13:26:27.467 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - -
+2022-09-15 13:26:27.579 +05:30 [INF] HTTP GET /swagger/v1/swagger.json ({UserId}) responded 200 in 110.5936ms
+2022-09-15 13:26:27.582 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 115.0780ms
+2022-09-15 13:26:31.884 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/api/User/GetAllStudents - -
+2022-09-15 13:26:31.898 +05:30 [INF] Executing endpoint 'GenericRepository.Controllers.UserController.GetStudentAsync (GenericRepository)'
+2022-09-15 13:26:31.920 +05:30 [INF] Route matched with {action = "GetStudent", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[GenericRepository.Model.Student]] GetStudentAsync() on controller GenericRepository.Controllers.UserController (GenericRepository).
+2022-09-15 13:26:33.297 +05:30 [INF] Entity Framework Core 6.0.8 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.8' with options: None
+2022-09-15 13:26:33.312 +05:30 [INF] I am inside Log
+2022-09-15 13:26:34.252 +05:30 [INF] Executed DbCommand (90ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Class], [s].[Marks], [s].[Name]
+FROM [Students] AS [s]
+2022-09-15 13:26:34.526 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[GenericRepository.Model.Student, GenericRepository, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-15 13:26:34.554 +05:30 [INF] Executed action GenericRepository.Controllers.UserController.GetStudentAsync (GenericRepository) in 2616.551ms
+2022-09-15 13:26:34.566 +05:30 [INF] Executed endpoint 'GenericRepository.Controllers.UserController.GetStudentAsync (GenericRepository)'
+2022-09-15 13:26:34.570 +05:30 [INF] HTTP GET /api/User/GetAllStudents ({UserId}) responded 200 in 2677.7261ms
+2022-09-15 13:26:34.586 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/api/User/GetAllStudents - - - 200 - application/json;+charset=utf-8 2701.8850ms
+2022-09-15 13:30:56.885 +05:30 [INF] Now listening on: https://localhost:7028
+2022-09-15 13:30:56.916 +05:30 [INF] Now listening on: http://localhost:5028
+2022-09-15 13:30:56.923 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-15 13:30:56.924 +05:30 [INF] Hosting environment: Development
+2022-09-15 13:30:56.925 +05:30 [INF] Content root path: C:\Users\danis\source\repos\Generic_Repository_For_Models\Generic_Repository_For_Models\
+2022-09-15 13:30:57.478 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/index.html - -
+2022-09-15 13:30:57.723 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - -
+2022-09-15 13:30:57.724 +05:30 [INF] HTTP GET /swagger/index.html ({UserId}) responded 200 in 192.7243ms
+2022-09-15 13:30:57.733 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 9.2063ms
+2022-09-15 13:30:57.746 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/index.html - - - 200 - text/html;charset=utf-8 271.2886ms
+2022-09-15 13:30:57.748 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_vs/browserLink - -
+2022-09-15 13:30:57.766 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 17.6460ms
+2022-09-15 13:30:57.902 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - -
+2022-09-15 13:30:58.053 +05:30 [INF] HTTP GET /swagger/v1/swagger.json ({UserId}) responded 200 in 148.8590ms
+2022-09-15 13:30:58.057 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 155.3010ms
+2022-09-15 13:32:09.959 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/api/User/GetAllStudents - -
+2022-09-15 13:32:09.976 +05:30 [INF] Executing endpoint 'GenericRepository.Controllers.UserController.GetStudentAsync (GenericRepository)'
+2022-09-15 13:32:09.993 +05:30 [INF] Route matched with {action = "GetStudent", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[GenericRepository.Model.Student]] GetStudentAsync() on controller GenericRepository.Controllers.UserController (GenericRepository).
+2022-09-15 13:32:10.797 +05:30 [INF] Entity Framework Core 6.0.8 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.8' with options: None
+2022-09-15 13:32:10.805 +05:30 [INF] I am inside Log
+2022-09-15 13:32:11.147 +05:30 [INF] Executed DbCommand (29ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Class], [s].[Marks], [s].[Name]
+FROM [Students] AS [s]
+2022-09-15 13:32:11.249 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[GenericRepository.Model.Student, GenericRepository, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-15 13:32:11.263 +05:30 [INF] Executed action GenericRepository.Controllers.UserController.GetStudentAsync (GenericRepository) in 1262.9664ms
+2022-09-15 13:32:11.268 +05:30 [INF] Executed endpoint 'GenericRepository.Controllers.UserController.GetStudentAsync (GenericRepository)'
+2022-09-15 13:32:11.270 +05:30 [INF] HTTP GET /api/User/GetAllStudents ({UserId}) responded 200 in 1303.7244ms
+2022-09-15 13:32:11.280 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/api/User/GetAllStudents - - - 200 - application/json;+charset=utf-8 1320.4105ms
+2022-09-15 13:40:11.038 +05:30 [INF] Now listening on: https://localhost:7028
+2022-09-15 13:40:11.063 +05:30 [INF] Now listening on: http://localhost:5028
+2022-09-15 13:40:11.072 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-15 13:40:11.076 +05:30 [INF] Hosting environment: Development
+2022-09-15 13:40:11.077 +05:30 [INF] Content root path: C:\Users\danis\source\repos\Generic_Repository_For_Models\Generic_Repository_For_Models\
+2022-09-15 13:40:11.443 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/index.html - -
+2022-09-15 13:40:11.711 +05:30 [INF] HTTP GET /swagger/index.html ({UserId}) responded 200 in 202.6411ms
+2022-09-15 13:40:11.726 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/index.html - - - 200 - text/html;charset=utf-8 286.0820ms
+2022-09-15 13:40:11.730 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - -
+2022-09-15 13:40:11.741 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 11.2191ms
+2022-09-15 13:40:11.776 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_vs/browserLink - -
+2022-09-15 13:40:11.812 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 36.0873ms
+2022-09-15 13:40:12.113 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - -
+2022-09-15 13:40:12.285 +05:30 [INF] HTTP GET /swagger/v1/swagger.json ({UserId}) responded 200 in 169.9550ms
+2022-09-15 13:40:12.291 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 177.6522ms
+2022-09-15 13:40:16.587 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/api/User/GetAllStudents - -
+2022-09-15 13:40:16.601 +05:30 [INF] Executing endpoint 'GenericRepository.Controllers.UserController.GetStudentAsync (GenericRepository)'
+2022-09-15 13:40:16.619 +05:30 [INF] Route matched with {action = "GetStudent", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[GenericRepository.Model.Student]] GetStudentAsync() on controller GenericRepository.Controllers.UserController (GenericRepository).
+2022-09-15 13:40:17.300 +05:30 [INF] Entity Framework Core 6.0.8 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.8' with options: None
+2022-09-15 13:40:17.304 +05:30 [INF] I am inside Log
+2022-09-15 13:40:17.641 +05:30 [INF] Executed DbCommand (37ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Class], [s].[Marks], [s].[Name]
+FROM [Students] AS [s]
+2022-09-15 13:40:17.736 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[GenericRepository.Model.Student, GenericRepository, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-15 13:40:17.749 +05:30 [INF] Executed action GenericRepository.Controllers.UserController.GetStudentAsync (GenericRepository) in 1121.1963ms
+2022-09-15 13:40:17.753 +05:30 [INF] Executed endpoint 'GenericRepository.Controllers.UserController.GetStudentAsync (GenericRepository)'
+2022-09-15 13:40:17.755 +05:30 [INF] HTTP GET /api/User/GetAllStudents ({UserId}) responded 200 in 1164.0073ms
+2022-09-15 13:40:17.764 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/api/User/GetAllStudents - - - 200 - application/json;+charset=utf-8 1177.1549ms
+2022-09-15 13:41:03.589 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/api/User/GetAllStudents - -
+2022-09-15 13:41:03.596 +05:30 [INF] Executing endpoint 'GenericRepository.Controllers.UserController.GetStudentAsync (GenericRepository)'
+2022-09-15 13:41:03.598 +05:30 [INF] Route matched with {action = "GetStudent", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[GenericRepository.Model.Student]] GetStudentAsync() on controller GenericRepository.Controllers.UserController (GenericRepository).
+2022-09-15 13:41:03.631 +05:30 [INF] Entity Framework Core 6.0.8 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.8' with options: None
+2022-09-15 13:41:03.634 +05:30 [INF] I am inside Log
+2022-09-15 13:41:03.648 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Class], [s].[Marks], [s].[Name]
+FROM [Students] AS [s]
+2022-09-15 13:41:03.650 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[GenericRepository.Model.Student, GenericRepository, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-15 13:41:03.651 +05:30 [INF] Executed action GenericRepository.Controllers.UserController.GetStudentAsync (GenericRepository) in 51.483ms
+2022-09-15 13:41:03.652 +05:30 [INF] Executed endpoint 'GenericRepository.Controllers.UserController.GetStudentAsync (GenericRepository)'
+2022-09-15 13:41:03.653 +05:30 [INF] HTTP GET /api/User/GetAllStudents ({UserId}) responded 200 in 57.4228ms
+2022-09-15 13:41:03.654 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/api/User/GetAllStudents - - - 200 - application/json;+charset=utf-8 65.1127ms
+2022-09-15 13:41:49.154 +05:30 [INF] Now listening on: https://localhost:7028
+2022-09-15 13:41:49.189 +05:30 [INF] Now listening on: http://localhost:5028
+2022-09-15 13:41:49.197 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-15 13:41:49.198 +05:30 [INF] Hosting environment: Development
+2022-09-15 13:41:49.199 +05:30 [INF] Content root path: C:\Users\danis\source\repos\Generic_Repository_For_Models\Generic_Repository_For_Models\
+2022-09-15 13:41:49.622 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/index.html - -
+2022-09-15 13:41:49.868 +05:30 [INF] HTTP GET /swagger/index.html ({UserId}) responded 200 in 193.4529ms
+2022-09-15 13:41:49.871 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - -
+2022-09-15 13:41:49.881 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 10.1528ms
+2022-09-15 13:41:49.885 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/index.html - - - 200 - text/html;charset=utf-8 267.3601ms
+2022-09-15 13:41:49.903 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_vs/browserLink - -
+2022-09-15 13:41:49.922 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 18.5939ms
+2022-09-15 13:41:50.246 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - -
+2022-09-15 13:41:50.360 +05:30 [INF] HTTP GET /swagger/v1/swagger.json ({UserId}) responded 200 in 111.0854ms
+2022-09-15 13:41:50.364 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 118.2856ms
+2022-09-15 13:41:55.629 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/api/User/GetAllStudents - -
+2022-09-15 13:41:55.651 +05:30 [INF] Executing endpoint 'GenericRepository.Controllers.UserController.GetStudentAsync (GenericRepository)'
+2022-09-15 13:41:55.700 +05:30 [INF] Route matched with {action = "GetStudent", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[GenericRepository.Model.Student]] GetStudentAsync() on controller GenericRepository.Controllers.UserController (GenericRepository).
+2022-09-15 13:41:57.738 +05:30 [INF] Entity Framework Core 6.0.8 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.8' with options: None
+2022-09-15 13:41:57.752 +05:30 [INF] I am inside Log
+2022-09-15 13:41:58.696 +05:30 [INF] Executed DbCommand (97ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Class], [s].[Marks], [s].[Name]
+FROM [Students] AS [s]
+2022-09-15 13:41:58.971 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[GenericRepository.Model.Student, GenericRepository, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-15 13:41:58.995 +05:30 [INF] Executed action GenericRepository.Controllers.UserController.GetStudentAsync (GenericRepository) in 3276.8428ms
+2022-09-15 13:41:59.002 +05:30 [INF] Executed endpoint 'GenericRepository.Controllers.UserController.GetStudentAsync (GenericRepository)'
+2022-09-15 13:41:59.007 +05:30 [INF] HTTP GET /api/User/GetAllStudents ({UserId}) responded 200 in 3370.8959ms
+2022-09-15 13:41:59.034 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/api/User/GetAllStudents - - - 200 - application/json;+charset=utf-8 3405.1382ms
+2022-09-15 13:42:27.051 +05:30 [INF] Now listening on: https://localhost:7028
+2022-09-15 13:42:27.131 +05:30 [INF] Now listening on: http://localhost:5028
+2022-09-15 13:42:27.141 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-15 13:42:27.142 +05:30 [INF] Hosting environment: Development
+2022-09-15 13:42:27.147 +05:30 [INF] Content root path: C:\Users\danis\source\repos\Generic_Repository_For_Models\Generic_Repository_For_Models\
+2022-09-15 13:42:27.441 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/index.html - -
+2022-09-15 13:42:27.667 +05:30 [INF] HTTP GET /swagger/index.html ({UserId}) responded 200 in 173.9374ms
+2022-09-15 13:42:27.679 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - -
+2022-09-15 13:42:27.684 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/index.html - - - 200 - text/html;charset=utf-8 246.7586ms
+2022-09-15 13:42:27.684 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 5.0577ms
+2022-09-15 13:42:27.712 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_vs/browserLink - -
+2022-09-15 13:42:27.731 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 19.3409ms
+2022-09-15 13:42:28.038 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - -
+2022-09-15 13:42:28.148 +05:30 [INF] HTTP GET /swagger/v1/swagger.json ({UserId}) responded 200 in 108.0017ms
+2022-09-15 13:42:28.151 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 112.4165ms
+2022-09-15 13:42:32.996 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/api/User/GetAllStudents - -
+2022-09-15 13:42:33.022 +05:30 [INF] Executing endpoint 'GenericRepository.Controllers.UserController.GetStudentAsync (GenericRepository)'
+2022-09-15 13:42:33.070 +05:30 [INF] Route matched with {action = "GetStudent", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[GenericRepository.Model.Student]] GetStudentAsync() on controller GenericRepository.Controllers.UserController (GenericRepository).
+2022-09-15 13:42:35.095 +05:30 [INF] Entity Framework Core 6.0.8 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.8' with options: None
+2022-09-15 13:42:35.108 +05:30 [INF] I am inside Log
+2022-09-15 13:42:36.041 +05:30 [INF] Executed DbCommand (88ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Class], [s].[Marks], [s].[Name]
+FROM [Students] AS [s]
+2022-09-15 13:42:36.304 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[GenericRepository.Model.Student, GenericRepository, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-15 13:42:36.330 +05:30 [INF] Executed action GenericRepository.Controllers.UserController.GetStudentAsync (GenericRepository) in 3244.7303ms
+2022-09-15 13:42:36.338 +05:30 [INF] Executed endpoint 'GenericRepository.Controllers.UserController.GetStudentAsync (GenericRepository)'
+2022-09-15 13:42:36.342 +05:30 [INF] HTTP GET /api/User/GetAllStudents ({UserId}) responded 200 in 3336.7321ms
+2022-09-15 13:42:36.366 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/api/User/GetAllStudents - - - 200 - application/json;+charset=utf-8 3369.7168ms
+2022-09-15 13:45:42.366 +05:30 [INF] Now listening on: https://localhost:7028
+2022-09-15 13:45:42.400 +05:30 [INF] Now listening on: http://localhost:5028
+2022-09-15 13:45:42.409 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-15 13:45:42.410 +05:30 [INF] Hosting environment: Development
+2022-09-15 13:45:42.411 +05:30 [INF] Content root path: C:\Users\danis\source\repos\Generic_Repository_For_Models\Generic_Repository_For_Models\
+2022-09-15 13:45:42.869 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/index.html - -
+2022-09-15 13:45:43.163 +05:30 [INF] HTTP GET /swagger/index.html ({UserId}) responded 200 in 224.5151ms
+2022-09-15 13:45:43.180 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - -
+2022-09-15 13:45:43.183 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/index.html - - - 200 - text/html;charset=utf-8 316.2961ms
+2022-09-15 13:45:43.195 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 14.8805ms
+2022-09-15 13:45:43.213 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_vs/browserLink - -
+2022-09-15 13:45:43.237 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 24.0139ms
+2022-09-15 13:45:43.549 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - -
+2022-09-15 13:45:43.672 +05:30 [INF] HTTP GET /swagger/v1/swagger.json ({UserId}) responded 200 in 121.0632ms
+2022-09-15 13:45:43.677 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 127.3578ms
+2022-09-15 13:47:33.767 +05:30 [INF] Now listening on: https://localhost:7028
+2022-09-15 13:47:33.793 +05:30 [INF] Now listening on: http://localhost:5028
+2022-09-15 13:47:33.799 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-15 13:47:33.800 +05:30 [INF] Hosting environment: Development
+2022-09-15 13:47:33.801 +05:30 [INF] Content root path: C:\Users\danis\source\repos\Generic_Repository_For_Models\Generic_Repository_For_Models\
+2022-09-15 13:47:34.179 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/index.html - -
+2022-09-15 13:47:34.413 +05:30 [INF] HTTP GET /swagger/index.html ({UserId}) responded 200 in 176.2273ms
+2022-09-15 13:47:34.426 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - -
+2022-09-15 13:47:34.432 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/index.html - - - 200 - text/html;charset=utf-8 256.7762ms
+2022-09-15 13:47:34.432 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 5.8786ms
+2022-09-15 13:47:34.458 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_vs/browserLink - -
+2022-09-15 13:47:34.477 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 19.3402ms
+2022-09-15 13:47:34.784 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - -
+2022-09-15 13:47:34.886 +05:30 [INF] HTTP GET /swagger/v1/swagger.json ({UserId}) responded 200 in 99.7925ms
+2022-09-15 13:47:34.891 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 106.5989ms
+2022-09-15 13:48:31.538 +05:30 [INF] Now listening on: https://localhost:7028
+2022-09-15 13:48:31.574 +05:30 [INF] Now listening on: http://localhost:5028
+2022-09-15 13:48:31.582 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-15 13:48:31.583 +05:30 [INF] Hosting environment: Development
+2022-09-15 13:48:31.584 +05:30 [INF] Content root path: C:\Users\danis\source\repos\Generic_Repository_For_Models\Generic_Repository_For_Models\
+2022-09-15 13:48:32.071 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/index.html - -
+2022-09-15 13:48:32.346 +05:30 [INF] HTTP GET /swagger/index.html ({UserId}) responded 200 in 210.4836ms
+2022-09-15 13:48:32.347 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - -
+2022-09-15 13:48:32.356 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 8.7060ms
+2022-09-15 13:48:32.356 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/index.html - - - 200 - text/html;charset=utf-8 288.1761ms
+2022-09-15 13:48:32.366 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_vs/browserLink - -
+2022-09-15 13:48:32.386 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 20.0489ms
+2022-09-15 13:48:32.527 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - -
+2022-09-15 13:48:32.662 +05:30 [INF] HTTP GET /swagger/v1/swagger.json ({UserId}) responded 200 in 131.0609ms
+2022-09-15 13:48:32.664 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 137.6947ms
+2022-09-15 13:49:19.151 +05:30 [INF] Now listening on: https://localhost:7028
+2022-09-15 13:49:19.196 +05:30 [INF] Now listening on: http://localhost:5028
+2022-09-15 13:49:19.205 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-15 13:49:19.206 +05:30 [INF] Hosting environment: Development
+2022-09-15 13:49:19.207 +05:30 [INF] Content root path: C:\Users\danis\source\repos\Generic_Repository_For_Models\Generic_Repository_For_Models\
+2022-09-15 13:49:19.546 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/index.html - -
+2022-09-15 13:49:19.833 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - -
+2022-09-15 13:49:19.833 +05:30 [INF] HTTP GET /swagger/index.html ({UserId}) responded 200 in 220.3635ms
+2022-09-15 13:49:19.842 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 8.3938ms
+2022-09-15 13:49:19.859 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/index.html - - - 200 - text/html;charset=utf-8 317.3687ms
+2022-09-15 13:49:19.861 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_vs/browserLink - -
+2022-09-15 13:49:19.883 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 22.1226ms
+2022-09-15 13:49:20.001 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - -
+2022-09-15 13:49:20.140 +05:30 [INF] HTTP GET /swagger/v1/swagger.json ({UserId}) responded 200 in 136.8632ms
+2022-09-15 13:49:20.144 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 142.6844ms
+2022-09-15 13:49:49.862 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5028/ - -
+2022-09-15 13:49:49.872 +05:30 [INF] HTTP GET / ({UserId}) responded 307 in 6.9320ms
+2022-09-15 13:49:49.917 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5028/ - - - 307 0 - 54.7970ms
+2022-09-15 13:49:49.929 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/ - -
+2022-09-15 13:49:49.933 +05:30 [INF] HTTP GET / ({UserId}) responded 404 in 1.3964ms
+2022-09-15 13:49:49.934 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/ - - - 404 0 - 5.6706ms
+2022-09-15 13:50:01.946 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/api/User/GetAllStudents - -
+2022-09-15 13:50:01.955 +05:30 [INF] Executing endpoint 'GenericRepository.Controllers.UserController.GetStudentAsync (GenericRepository)'
+2022-09-15 13:50:01.970 +05:30 [INF] Route matched with {action = "GetStudent", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[GenericRepository.Model.Student]] GetStudentAsync() on controller GenericRepository.Controllers.UserController (GenericRepository).
+2022-09-15 13:50:02.702 +05:30 [INF] Entity Framework Core 6.0.8 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.8' with options: None
+2022-09-15 13:50:02.714 +05:30 [INF] I am inside Log
+2022-09-15 13:50:03.060 +05:30 [INF] Executed DbCommand (29ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Class], [s].[Marks], [s].[Name]
+FROM [Students] AS [s]
+2022-09-15 13:50:03.167 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[GenericRepository.Model.Student, GenericRepository, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-15 13:50:03.180 +05:30 [INF] Executed action GenericRepository.Controllers.UserController.GetStudentAsync (GenericRepository) in 1199.2424ms
+2022-09-15 13:50:03.185 +05:30 [INF] Executed endpoint 'GenericRepository.Controllers.UserController.GetStudentAsync (GenericRepository)'
+2022-09-15 13:50:03.187 +05:30 [INF] HTTP GET /api/User/GetAllStudents ({UserId}) responded 200 in 1236.3862ms
+2022-09-15 13:50:03.198 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/api/User/GetAllStudents - - - 200 - application/json;+charset=utf-8 1252.4813ms
+2022-09-15 13:56:29.265 +05:30 [INF] Now listening on: https://localhost:7028
+2022-09-15 13:56:29.292 +05:30 [INF] Now listening on: http://localhost:5028
+2022-09-15 13:56:29.308 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-15 13:56:29.313 +05:30 [INF] Hosting environment: Development
+2022-09-15 13:56:29.314 +05:30 [INF] Content root path: C:\Users\danis\source\repos\Generic_Repository_For_Models\Generic_Repository_For_Models\
+2022-09-15 13:56:29.698 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/index.html - -
+2022-09-15 13:56:29.955 +05:30 [INF] HTTP GET /swagger/index.html ({UserId}) responded 200 in 195.7079ms
+2022-09-15 13:56:29.957 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - -
+2022-09-15 13:56:29.969 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/index.html - - - 200 - text/html;charset=utf-8 274.9955ms
+2022-09-15 13:56:29.969 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 11.3210ms
+2022-09-15 13:56:29.979 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_vs/browserLink - -
+2022-09-15 13:56:29.995 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 15.7584ms
+2022-09-15 13:56:30.090 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - -
+2022-09-15 13:56:30.209 +05:30 [INF] HTTP GET /swagger/v1/swagger.json ({UserId}) responded 200 in 117.7033ms
+2022-09-15 13:56:30.212 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 122.4144ms
+2022-09-15 13:59:43.497 +05:30 [INF] Now listening on: https://localhost:7028
+2022-09-15 13:59:43.544 +05:30 [INF] Now listening on: http://localhost:5028
+2022-09-15 13:59:43.552 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-15 13:59:43.553 +05:30 [INF] Hosting environment: Development
+2022-09-15 13:59:43.555 +05:30 [INF] Content root path: C:\Users\danis\source\repos\Generic_Repository_For_Models\Generic_Repository_For_Models\
+2022-09-15 13:59:43.813 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/index.html - -
+2022-09-15 13:59:44.088 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - -
+2022-09-15 13:59:44.088 +05:30 [INF] HTTP GET /swagger/index.html ({UserId}) responded 200 in 211.1006ms
+2022-09-15 13:59:44.097 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 8.3849ms
+2022-09-15 13:59:44.111 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/index.html - - - 200 - text/html;charset=utf-8 302.2549ms
+2022-09-15 13:59:44.122 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_vs/browserLink - -
+2022-09-15 13:59:44.141 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 19.1457ms
+2022-09-15 13:59:44.462 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - -
+2022-09-15 13:59:44.609 +05:30 [INF] HTTP GET /swagger/v1/swagger.json ({UserId}) responded 200 in 144.8934ms
+2022-09-15 13:59:44.612 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 150.4304ms
+2022-09-15 14:00:25.476 +05:30 [INF] Now listening on: https://localhost:7028
+2022-09-15 14:00:25.510 +05:30 [INF] Now listening on: http://localhost:5028
+2022-09-15 14:00:25.520 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-15 14:00:25.522 +05:30 [INF] Hosting environment: Development
+2022-09-15 14:00:25.522 +05:30 [INF] Content root path: C:\Users\danis\source\repos\Generic_Repository_For_Models\Generic_Repository_For_Models\
+2022-09-15 14:00:25.824 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/index.html - -
+2022-09-15 14:00:26.100 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - -
+2022-09-15 14:00:26.102 +05:30 [INF] HTTP GET /swagger/index.html ({UserId}) responded 200 in 214.4374ms
+2022-09-15 14:00:26.112 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 10.6383ms
+2022-09-15 14:00:26.113 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/index.html - - - 200 - text/html;charset=utf-8 294.2724ms
+2022-09-15 14:00:26.123 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_vs/browserLink - -
+2022-09-15 14:00:26.142 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 18.7443ms
+2022-09-15 14:00:26.283 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - -
+2022-09-15 14:00:26.407 +05:30 [INF] HTTP GET /swagger/v1/swagger.json ({UserId}) responded 200 in 122.6623ms
+2022-09-15 14:00:26.411 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 128.3500ms
+2022-09-15 14:01:34.990 +05:30 [INF] Now listening on: https://localhost:7028
+2022-09-15 14:01:35.033 +05:30 [INF] Now listening on: http://localhost:5028
+2022-09-15 14:01:35.042 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-15 14:01:35.044 +05:30 [INF] Hosting environment: Development
+2022-09-15 14:01:35.045 +05:30 [INF] Content root path: C:\Users\danis\source\repos\Generic_Repository_For_Models\Generic_Repository_For_Models\
+2022-09-15 14:01:35.360 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/index.html - -
+2022-09-15 14:01:35.623 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - -
+2022-09-15 14:01:35.626 +05:30 [INF] HTTP GET /swagger/index.html ({UserId}) responded 200 in 199.6222ms
+2022-09-15 14:01:35.633 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 8.6561ms
+2022-09-15 14:01:35.649 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_vs/browserLink - -
+2022-09-15 14:01:35.651 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/index.html - - - 200 - text/html;charset=utf-8 296.2907ms
+2022-09-15 14:01:35.669 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 19.5120ms
+2022-09-15 14:01:35.800 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - -
+2022-09-15 14:01:35.927 +05:30 [INF] HTTP GET /swagger/v1/swagger.json ({UserId}) responded 200 in 124.5223ms
+2022-09-15 14:01:35.932 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 131.9080ms
+2022-09-15 14:06:06.508 +05:30 [INF] Now listening on: https://localhost:7028
+2022-09-15 14:06:06.534 +05:30 [INF] Now listening on: http://localhost:5028
+2022-09-15 14:06:06.543 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-15 14:06:06.545 +05:30 [INF] Hosting environment: Development
+2022-09-15 14:06:06.549 +05:30 [INF] Content root path: C:\Users\danis\source\repos\Generic_Repository_For_Models\Generic_Repository_For_Models\
+2022-09-15 14:06:07.175 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/index.html - -
+2022-09-15 14:06:07.453 +05:30 [INF] HTTP GET /swagger/index.html ({UserId}) responded 200 in 214.6692ms
+2022-09-15 14:06:07.466 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - -
+2022-09-15 14:06:07.469 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/index.html - - - 200 - text/html;charset=utf-8 298.0760ms
+2022-09-15 14:06:07.479 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 13.3142ms
+2022-09-15 14:06:07.506 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_vs/browserLink - -
+2022-09-15 14:06:07.557 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 50.4085ms
+2022-09-15 14:06:07.840 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - -
+2022-09-15 14:06:07.950 +05:30 [INF] HTTP GET /swagger/v1/swagger.json ({UserId}) responded 200 in 107.7019ms
+2022-09-15 14:06:07.955 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 114.9653ms
+2022-09-15 14:07:35.912 +05:30 [INF] Now listening on: https://localhost:7028
+2022-09-15 14:07:35.951 +05:30 [INF] Now listening on: http://localhost:5028
+2022-09-15 14:07:35.958 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-15 14:07:35.959 +05:30 [INF] Hosting environment: Development
+2022-09-15 14:07:35.960 +05:30 [INF] Content root path: C:\Users\danis\source\repos\Generic_Repository_For_Models\Generic_Repository_For_Models\
+2022-09-15 14:07:36.433 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/index.html - -
+2022-09-15 14:07:36.687 +05:30 [INF] HTTP GET /swagger/index.html ({UserId}) responded 200 in 186.4753ms
+2022-09-15 14:07:36.695 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - -
+2022-09-15 14:07:36.703 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 7.5243ms
+2022-09-15 14:07:36.703 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/index.html - - - 200 - text/html;charset=utf-8 274.4938ms
+2022-09-15 14:07:36.733 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_vs/browserLink - -
+2022-09-15 14:07:36.755 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 22.2397ms
+2022-09-15 14:07:37.072 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - -
+2022-09-15 14:07:37.212 +05:30 [INF] HTTP GET /swagger/v1/swagger.json ({UserId}) responded 200 in 138.2002ms
+2022-09-15 14:07:37.215 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 143.7051ms
+2022-09-15 14:09:02.780 +05:30 [INF] Now listening on: https://localhost:7028
+2022-09-15 14:09:02.810 +05:30 [INF] Now listening on: http://localhost:5028
+2022-09-15 14:09:02.817 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-15 14:09:02.819 +05:30 [INF] Hosting environment: Development
+2022-09-15 14:09:02.820 +05:30 [INF] Content root path: C:\Users\danis\source\repos\Generic_Repository_For_Models\Generic_Repository_For_Models\
+2022-09-15 14:09:03.282 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/index.html - -
+2022-09-15 14:09:03.550 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - -
+2022-09-15 14:09:03.553 +05:30 [INF] HTTP GET /swagger/index.html ({UserId}) responded 200 in 206.8871ms
+2022-09-15 14:09:03.562 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 11.2449ms
+2022-09-15 14:09:03.571 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_vs/browserLink - -
+2022-09-15 14:09:03.577 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/index.html - - - 200 - text/html;charset=utf-8 298.0829ms
+2022-09-15 14:09:03.596 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 25.1257ms
+2022-09-15 14:09:03.710 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - -
+2022-09-15 14:09:03.847 +05:30 [INF] HTTP GET /swagger/v1/swagger.json ({UserId}) responded 200 in 135.1245ms
+2022-09-15 14:09:03.852 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 142.1115ms
+2022-09-15 14:10:22.809 +05:30 [INF] Now listening on: https://localhost:7028
+2022-09-15 14:10:22.841 +05:30 [INF] Now listening on: http://localhost:5028
+2022-09-15 14:10:22.848 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-15 14:10:22.849 +05:30 [INF] Hosting environment: Development
+2022-09-15 14:10:22.850 +05:30 [INF] Content root path: C:\Users\danis\source\repos\Generic_Repository_For_Models\Generic_Repository_For_Models\
+2022-09-15 14:10:23.327 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/index.html - -
+2022-09-15 14:10:23.586 +05:30 [INF] HTTP GET /swagger/index.html ({UserId}) responded 200 in 201.8092ms
+2022-09-15 14:10:23.594 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - -
+2022-09-15 14:10:23.602 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 7.2266ms
+2022-09-15 14:10:23.603 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/index.html - - - 200 - text/html;charset=utf-8 283.2068ms
+2022-09-15 14:10:23.632 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_vs/browserLink - -
+2022-09-15 14:10:23.662 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 29.3766ms
+2022-09-15 14:10:23.953 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - -
+2022-09-15 14:10:24.088 +05:30 [INF] HTTP GET /swagger/v1/swagger.json ({UserId}) responded 200 in 133.9504ms
+2022-09-15 14:10:24.094 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 141.0280ms
+2022-09-15 14:11:05.106 +05:30 [INF] Now listening on: https://localhost:7028
+2022-09-15 14:11:05.150 +05:30 [INF] Now listening on: http://localhost:5028
+2022-09-15 14:11:05.160 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-15 14:11:05.161 +05:30 [INF] Hosting environment: Development
+2022-09-15 14:11:05.162 +05:30 [INF] Content root path: C:\Users\danis\source\repos\Generic_Repository_For_Models\Generic_Repository_For_Models\
+2022-09-15 14:11:05.515 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/index.html - -
+2022-09-15 14:11:05.763 +05:30 [INF] HTTP GET /swagger/index.html ({UserId}) responded 200 in 186.3233ms
+2022-09-15 14:11:05.779 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - -
+2022-09-15 14:11:05.781 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/index.html - - - 200 - text/html;charset=utf-8 269.3716ms
+2022-09-15 14:11:05.794 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 14.9243ms
+2022-09-15 14:11:05.807 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_vs/browserLink - -
+2022-09-15 14:11:05.828 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 21.4241ms
+2022-09-15 14:11:06.144 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - -
+2022-09-15 14:11:06.291 +05:30 [INF] HTTP GET /swagger/v1/swagger.json ({UserId}) responded 200 in 143.7835ms
+2022-09-15 14:11:06.297 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 153.7861ms
+2022-09-15 14:12:58.698 +05:30 [INF] Now listening on: https://localhost:7028
+2022-09-15 14:12:58.727 +05:30 [INF] Now listening on: http://localhost:5028
+2022-09-15 14:12:58.736 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-15 14:12:58.738 +05:30 [INF] Hosting environment: Development
+2022-09-15 14:12:58.740 +05:30 [INF] Content root path: C:\Users\danis\source\repos\Generic_Repository_For_Models\Generic_Repository_For_Models\
+2022-09-15 14:12:59.431 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/index.html - -
+2022-09-15 14:12:59.715 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - -
+2022-09-15 14:12:59.720 +05:30 [INF] HTTP GET /swagger/index.html ({UserId}) responded 200 in 234.3516ms
+2022-09-15 14:12:59.729 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 12.2789ms
+2022-09-15 14:12:59.744 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_vs/browserLink - -
+2022-09-15 14:12:59.748 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/index.html - - - 200 - text/html;charset=utf-8 320.1060ms
+2022-09-15 14:12:59.770 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 26.3272ms
+2022-09-15 14:13:00.083 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - -
+2022-09-15 14:13:00.259 +05:30 [INF] HTTP GET /swagger/v1/swagger.json ({UserId}) responded 200 in 172.5497ms
+2022-09-15 14:13:00.263 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 180.0275ms
+2022-09-15 14:15:00.354 +05:30 [INF] Now listening on: https://localhost:7028
+2022-09-15 14:15:00.382 +05:30 [INF] Now listening on: http://localhost:5028
+2022-09-15 14:15:00.390 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-15 14:15:00.391 +05:30 [INF] Hosting environment: Development
+2022-09-15 14:15:00.392 +05:30 [INF] Content root path: C:\Users\danis\source\repos\Generic_Repository_For_Models\Generic_Repository_For_Models\
+2022-09-15 14:15:01.158 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/index.html - -
+2022-09-15 14:15:01.406 +05:30 [INF] HTTP GET /swagger/index.html ({UserId}) responded 200 in 193.8101ms
+2022-09-15 14:15:01.419 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - -
+2022-09-15 14:15:01.425 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/index.html - - - 200 - text/html;charset=utf-8 269.8511ms
+2022-09-15 14:15:01.426 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 6.8015ms
+2022-09-15 14:15:01.458 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_vs/browserLink - -
+2022-09-15 14:15:01.527 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 69.2968ms
+2022-09-15 14:15:01.760 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - -
+2022-09-15 14:15:01.892 +05:30 [INF] HTTP GET /swagger/v1/swagger.json ({UserId}) responded 200 in 131.2409ms
+2022-09-15 14:15:01.897 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 136.9962ms
+2022-09-15 14:15:42.441 +05:30 [INF] Now listening on: https://localhost:7028
+2022-09-15 14:15:42.498 +05:30 [INF] Now listening on: http://localhost:5028
+2022-09-15 14:15:42.512 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-15 14:15:42.513 +05:30 [INF] Hosting environment: Development
+2022-09-15 14:15:42.514 +05:30 [INF] Content root path: C:\Users\danis\source\repos\Generic_Repository_For_Models\Generic_Repository_For_Models\
+2022-09-15 14:15:42.886 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/index.html - -
+2022-09-15 14:15:43.218 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - -
+2022-09-15 14:15:43.223 +05:30 [INF] HTTP GET /swagger/index.html ({UserId}) responded 200 in 263.1390ms
+2022-09-15 14:15:43.232 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 12.9186ms
+2022-09-15 14:15:43.244 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_vs/browserLink - -
+2022-09-15 14:15:43.248 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/index.html - - - 200 - text/html;charset=utf-8 366.0559ms
+2022-09-15 14:15:43.265 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 20.4757ms
+2022-09-15 14:15:43.422 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - -
+2022-09-15 14:15:43.545 +05:30 [INF] HTTP GET /swagger/v1/swagger.json ({UserId}) responded 200 in 119.9662ms
+2022-09-15 14:15:43.548 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 126.3511ms
+2022-09-15 14:17:44.881 +05:30 [INF] Now listening on: https://localhost:7028
+2022-09-15 14:17:44.935 +05:30 [INF] Now listening on: http://localhost:5028
+2022-09-15 14:17:44.978 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-15 14:17:44.991 +05:30 [INF] Hosting environment: Development
+2022-09-15 14:17:44.992 +05:30 [INF] Content root path: C:\Users\danis\source\repos\Generic_Repository_For_Models\Generic_Repository_For_Models\
+2022-09-15 14:17:45.351 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/index.html - -
+2022-09-15 14:17:45.631 +05:30 [INF] HTTP GET /swagger/index.html ({UserId}) responded 200 in 199.4683ms
+2022-09-15 14:17:45.639 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - -
+2022-09-15 14:17:45.645 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 6.0794ms
+2022-09-15 14:17:45.647 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/index.html - - - 200 - text/html;charset=utf-8 299.9103ms
+2022-09-15 14:17:45.664 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_vs/browserLink - -
+2022-09-15 14:17:45.683 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 18.5548ms
+2022-09-15 14:17:46.001 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - -
+2022-09-15 14:17:46.148 +05:30 [INF] HTTP GET /swagger/v1/swagger.json ({UserId}) responded 200 in 143.9630ms
+2022-09-15 14:17:46.154 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 153.4238ms
+2022-09-15 14:19:10.156 +05:30 [INF] Now listening on: https://localhost:7028
+2022-09-15 14:19:10.180 +05:30 [INF] Now listening on: http://localhost:5028
+2022-09-15 14:19:10.187 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-15 14:19:10.188 +05:30 [INF] Hosting environment: Development
+2022-09-15 14:19:10.189 +05:30 [INF] Content root path: C:\Users\danis\source\repos\Generic_Repository_For_Models\Generic_Repository_For_Models\
+2022-09-15 14:19:10.924 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/index.html - -
+2022-09-15 14:19:11.260 +05:30 [INF] HTTP GET /swagger/index.html ({UserId}) responded 200 in 267.0136ms
+2022-09-15 14:19:11.278 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - -
+2022-09-15 14:19:11.288 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/index.html - - - 200 - text/html;charset=utf-8 370.0835ms
+2022-09-15 14:19:11.288 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 10.4992ms
+2022-09-15 14:19:11.311 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_vs/browserLink - -
+2022-09-15 14:19:11.331 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 19.5081ms
+2022-09-15 14:19:11.604 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - -
+2022-09-15 14:19:11.720 +05:30 [INF] HTTP GET /swagger/v1/swagger.json ({UserId}) responded 200 in 114.3837ms
+2022-09-15 14:19:11.723 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 118.8230ms
+2022-09-15 14:20:10.403 +05:30 [INF] Now listening on: https://localhost:7028
+2022-09-15 14:20:10.434 +05:30 [INF] Now listening on: http://localhost:5028
+2022-09-15 14:20:10.441 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-15 14:20:10.443 +05:30 [INF] Hosting environment: Development
+2022-09-15 14:20:10.444 +05:30 [INF] Content root path: C:\Users\danis\source\repos\Generic_Repository_For_Models\Generic_Repository_For_Models\
+2022-09-15 14:20:10.940 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/index.html - -
+2022-09-15 14:20:11.262 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - -
+2022-09-15 14:20:11.265 +05:30 [INF] HTTP GET /swagger/index.html ({UserId}) responded 200 in 231.9755ms
+2022-09-15 14:20:11.274 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 11.5262ms
+2022-09-15 14:20:11.285 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_vs/browserLink - -
+2022-09-15 14:20:11.290 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/index.html - - - 200 - text/html;charset=utf-8 354.9206ms
+2022-09-15 14:20:11.306 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 21.0170ms
+2022-09-15 14:20:11.415 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - -
+2022-09-15 14:20:11.559 +05:30 [INF] HTTP GET /swagger/v1/swagger.json ({UserId}) responded 200 in 140.3122ms
+2022-09-15 14:20:11.562 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 146.4116ms
+2022-09-15 14:20:15.166 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/api/User/GetAllStudents - -
+2022-09-15 14:20:15.177 +05:30 [INF] Executing endpoint 'GenericRepository.Controllers.UserController.GetStudentAsync (GenericRepository)'
+2022-09-15 14:20:15.195 +05:30 [INF] Route matched with {action = "GetStudent", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[GenericRepository.Model.Student]] GetStudentAsync() on controller GenericRepository.Controllers.UserController (GenericRepository).
+2022-09-15 14:20:16.004 +05:30 [INF] Entity Framework Core 6.0.8 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.8' with options: None
+2022-09-15 14:20:16.013 +05:30 [INF] I am inside Log
+2022-09-15 14:20:16.651 +05:30 [INF] Executed DbCommand (72ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Class], [s].[Marks], [s].[Name]
+FROM [Students] AS [s]
+2022-09-15 14:20:16.934 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[GenericRepository.Model.Student, GenericRepository, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-15 14:20:16.963 +05:30 [INF] Executed action GenericRepository.Controllers.UserController.GetStudentAsync (GenericRepository) in 1749.5279ms
+2022-09-15 14:20:16.972 +05:30 [INF] Executed endpoint 'GenericRepository.Controllers.UserController.GetStudentAsync (GenericRepository)'
+2022-09-15 14:20:16.976 +05:30 [INF] HTTP GET /api/User/GetAllStudents ({UserId}) responded 200 in 1804.9446ms
+2022-09-15 14:20:16.996 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/api/User/GetAllStudents - - - 200 - application/json;+charset=utf-8 1829.8203ms
+2022-09-15 14:24:17.352 +05:30 [INF] Now listening on: https://localhost:7028
+2022-09-15 14:24:17.372 +05:30 [INF] Now listening on: http://localhost:5028
+2022-09-15 14:24:17.377 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-15 14:24:17.378 +05:30 [INF] Hosting environment: Development
+2022-09-15 14:24:17.379 +05:30 [INF] Content root path: C:\Users\danis\source\repos\Generic_Repository_For_Models\Generic_Repository_For_Models\
+2022-09-15 14:24:17.961 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/index.html - -
+2022-09-15 14:24:18.118 +05:30 [INF] HTTP GET /swagger/index.html ({UserId}) responded 200 in 115.4327ms
+2022-09-15 14:24:18.130 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/index.html - - - 200 - text/html;charset=utf-8 171.4483ms
+2022-09-15 14:24:18.133 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - -
+2022-09-15 14:24:18.138 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 4.6117ms
+2022-09-15 14:24:18.166 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_vs/browserLink - -
+2022-09-15 14:24:18.186 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 20.2147ms
+2022-09-15 14:24:18.433 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - -
+2022-09-15 14:24:18.522 +05:30 [INF] HTTP GET /swagger/v1/swagger.json ({UserId}) responded 200 in 86.9329ms
+2022-09-15 14:24:18.528 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 95.0084ms
+2022-09-15 14:24:24.430 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/api/User/GetAllStudents - -
+2022-09-15 14:24:24.438 +05:30 [INF] Executing endpoint 'GenericRepository.Controllers.UserController.GetStudentAsync (GenericRepository)'
+2022-09-15 14:24:24.459 +05:30 [INF] Route matched with {action = "GetStudent", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[GenericRepository.Model.Student]] GetStudentAsync() on controller GenericRepository.Controllers.UserController (GenericRepository).
+2022-09-15 14:24:25.181 +05:30 [INF] Entity Framework Core 6.0.8 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.8' with options: None
+2022-09-15 14:24:25.194 +05:30 [INF] I am inside Log
+2022-09-15 14:24:25.757 +05:30 [INF] Executed DbCommand (30ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Class], [s].[Marks], [s].[Name]
+FROM [Students] AS [s]
+2022-09-15 14:24:25.902 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[GenericRepository.Model.Student, GenericRepository, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-15 14:24:25.923 +05:30 [INF] Executed action GenericRepository.Controllers.UserController.GetStudentAsync (GenericRepository) in 1450.9671ms
+2022-09-15 14:24:25.930 +05:30 [INF] Executed endpoint 'GenericRepository.Controllers.UserController.GetStudentAsync (GenericRepository)'
+2022-09-15 14:24:25.933 +05:30 [INF] HTTP GET /api/User/GetAllStudents ({UserId}) responded 200 in 1499.5362ms
+2022-09-15 14:24:25.950 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/api/User/GetAllStudents - - - 200 - application/json;+charset=utf-8 1519.4623ms
+2022-09-15 14:25:29.844 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/index.html - -
+2022-09-15 14:25:29.857 +05:30 [INF] HTTP GET /swagger/index.html ({UserId}) responded 200 in 9.3939ms
+2022-09-15 14:25:29.865 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/index.html - - - 200 - text/html;charset=utf-8 20.7014ms
+2022-09-15 14:25:29.883 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_vs/browserLink - -
+2022-09-15 14:25:29.884 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - -
+2022-09-15 14:25:29.890 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 5.5501ms
+2022-09-15 14:25:29.899 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 15.8588ms
+2022-09-15 14:25:30.227 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - -
+2022-09-15 14:25:30.239 +05:30 [INF] HTTP GET /swagger/v1/swagger.json ({UserId}) responded 200 in 8.0035ms
+2022-09-15 14:25:30.245 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 17.6155ms
+2022-09-15 14:25:47.192 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/api/User/GetAllStudents - -
+2022-09-15 14:25:47.197 +05:30 [INF] Executing endpoint 'GenericRepository.Controllers.UserController.GetStudentAsync (GenericRepository)'
+2022-09-15 14:25:47.199 +05:30 [INF] Route matched with {action = "GetStudent", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[GenericRepository.Model.Student]] GetStudentAsync() on controller GenericRepository.Controllers.UserController (GenericRepository).
+2022-09-15 14:25:47.233 +05:30 [INF] Entity Framework Core 6.0.8 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.8' with options: None
+2022-09-15 14:25:47.238 +05:30 [INF] I am inside Log
+2022-09-15 14:25:47.242 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Class], [s].[Marks], [s].[Name]
+FROM [Students] AS [s]
+2022-09-15 14:25:47.245 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[GenericRepository.Model.Student, GenericRepository, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-15 14:25:47.247 +05:30 [INF] Executed action GenericRepository.Controllers.UserController.GetStudentAsync (GenericRepository) in 43.7833ms
+2022-09-15 14:25:47.248 +05:30 [INF] Executed endpoint 'GenericRepository.Controllers.UserController.GetStudentAsync (GenericRepository)'
+2022-09-15 14:25:47.249 +05:30 [INF] HTTP GET /api/User/GetAllStudents ({UserId}) responded 200 in 52.4044ms
+2022-09-15 14:25:47.251 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/api/User/GetAllStudents - - - 200 - application/json;+charset=utf-8 58.3617ms
+2022-09-15 14:26:11.748 +05:30 [INF] Application is shutting down...
+2022-09-15 14:26:16.395 +05:30 [INF] Now listening on: https://localhost:7028
+2022-09-15 14:26:16.416 +05:30 [INF] Now listening on: http://localhost:5028
+2022-09-15 14:26:16.421 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-15 14:26:16.422 +05:30 [INF] Hosting environment: Development
+2022-09-15 14:26:16.423 +05:30 [INF] Content root path: C:\Users\danis\source\repos\Generic_Repository_For_Models\Generic_Repository_For_Models\
+2022-09-15 14:26:16.924 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/index.html - -
+2022-09-15 14:26:17.046 +05:30 [INF] HTTP GET /swagger/index.html ({UserId}) responded 200 in 91.9260ms
+2022-09-15 14:26:17.058 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - -
+2022-09-15 14:26:17.058 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_vs/browserLink - -
+2022-09-15 14:26:17.058 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/index.html - - - 200 - text/html;charset=utf-8 136.8058ms
+2022-09-15 14:26:17.062 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 3.9632ms
+2022-09-15 14:26:17.071 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 13.0987ms
+2022-09-15 14:26:17.411 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - -
+2022-09-15 14:26:17.481 +05:30 [INF] HTTP GET /swagger/v1/swagger.json ({UserId}) responded 200 in 67.9151ms
+2022-09-15 14:26:17.483 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 71.8345ms
+2022-09-15 14:27:13.368 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/api/User/GetAllStudents - -
+2022-09-15 14:27:13.385 +05:30 [INF] Executing endpoint 'GenericRepository.Controllers.UserController.GetStudentAsync (GenericRepository)'
+2022-09-15 14:27:13.429 +05:30 [INF] Route matched with {action = "GetStudent", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[GenericRepository.Model.Student]] GetStudentAsync() on controller GenericRepository.Controllers.UserController (GenericRepository).
+2022-09-15 14:27:14.777 +05:30 [INF] Entity Framework Core 6.0.8 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.8' with options: None
+2022-09-15 14:27:14.786 +05:30 [INF] I am inside Log
+2022-09-15 14:27:15.329 +05:30 [INF] Executed DbCommand (29ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Class], [s].[Marks], [s].[Name]
+FROM [Students] AS [s]
+2022-09-15 14:27:15.490 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[GenericRepository.Model.Student, GenericRepository, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-15 14:27:15.514 +05:30 [INF] Executed action GenericRepository.Controllers.UserController.GetStudentAsync (GenericRepository) in 2067.7202ms
+2022-09-15 14:27:15.519 +05:30 [INF] Executed endpoint 'GenericRepository.Controllers.UserController.GetStudentAsync (GenericRepository)'
+2022-09-15 14:27:15.522 +05:30 [INF] HTTP GET /api/User/GetAllStudents ({UserId}) responded 200 in 2148.8761ms
+2022-09-15 14:27:15.534 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/api/User/GetAllStudents - - - 200 - application/json;+charset=utf-8 2166.0740ms
+2022-09-15 15:02:34.595 +05:30 [INF] Now listening on: https://localhost:7028
+2022-09-15 15:02:34.633 +05:30 [INF] Now listening on: http://localhost:5028
+2022-09-15 15:02:34.641 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-15 15:02:34.642 +05:30 [INF] Hosting environment: Development
+2022-09-15 15:02:34.642 +05:30 [INF] Content root path: C:\Users\danis\source\repos\Generic_Repository_For_Models\Generic_Repository_For_Models\
+2022-09-15 15:02:38.620 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/index.html - -
+2022-09-15 15:02:38.862 +05:30 [INF] HTTP GET /swagger/index.html ({UserId}) responded 200 in 191.6308ms
+2022-09-15 15:02:38.876 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/index.html - - - 200 - text/html;charset=utf-8 258.6637ms
+2022-09-15 15:02:38.880 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - -
+2022-09-15 15:02:38.886 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 5.8906ms
+2022-09-15 15:02:38.901 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_vs/browserLink - -
+2022-09-15 15:02:38.931 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 30.2552ms
+2022-09-15 15:02:39.021 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - -
+2022-09-15 15:02:39.149 +05:30 [INF] HTTP GET /swagger/v1/swagger.json ({UserId}) responded 200 in 126.6855ms
+2022-09-15 15:02:39.153 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 131.4074ms
+2022-09-15 15:03:00.218 +05:30 [INF] Now listening on: https://localhost:7028
+2022-09-15 15:03:00.235 +05:30 [INF] Now listening on: http://localhost:5028
+2022-09-15 15:03:00.238 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-15 15:03:00.239 +05:30 [INF] Hosting environment: Development
+2022-09-15 15:03:00.240 +05:30 [INF] Content root path: C:\Users\danis\source\repos\Generic_Repository_For_Models\Generic_Repository_For_Models\
+2022-09-15 15:03:00.876 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/index.html - -
+2022-09-15 15:03:01.013 +05:30 [INF] HTTP GET /swagger/index.html ({UserId}) responded 200 in 98.1717ms
+2022-09-15 15:03:01.025 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/index.html - - - 200 - text/html;charset=utf-8 151.2400ms
+2022-09-15 15:03:01.027 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - -
+2022-09-15 15:03:01.031 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 3.4862ms
+2022-09-15 15:03:01.054 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_vs/browserLink - -
+2022-09-15 15:03:01.066 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 11.3877ms
+2022-09-15 15:03:01.218 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - -
+2022-09-15 15:03:01.289 +05:30 [INF] HTTP GET /swagger/v1/swagger.json ({UserId}) responded 200 in 69.6904ms
+2022-09-15 15:03:01.292 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 74.3029ms
+2022-09-15 15:03:19.884 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/api/User/GetAllStudents - -
+2022-09-15 15:03:19.891 +05:30 [INF] Executing endpoint 'GenericRepository.Controllers.UserController.GetStudentAsync (GenericRepository)'
+2022-09-15 15:03:19.909 +05:30 [INF] Route matched with {action = "GetStudent", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[GenericRepository.Model.Student]] GetStudentAsync() on controller GenericRepository.Controllers.UserController (GenericRepository).
+2022-09-15 15:03:20.887 +05:30 [INF] Entity Framework Core 6.0.8 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.8' with options: None
+2022-09-15 15:03:20.892 +05:30 [INF] I am inside Log
+2022-09-15 15:03:21.224 +05:30 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Class], [s].[Marks], [s].[Name]
+FROM [Students] AS [s]
+2022-09-15 15:03:21.305 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[GenericRepository.Model.Student, GenericRepository, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-15 15:03:21.313 +05:30 [INF] Executed action GenericRepository.Controllers.UserController.GetStudentAsync (GenericRepository) in 1398.0165ms
+2022-09-15 15:03:21.316 +05:30 [INF] Executed endpoint 'GenericRepository.Controllers.UserController.GetStudentAsync (GenericRepository)'
+2022-09-15 15:03:21.317 +05:30 [INF] HTTP GET /api/User/GetAllStudents ({UserId}) responded 200 in 1429.2829ms
+2022-09-15 15:03:21.321 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/api/User/GetAllStudents - - - 200 - application/json;+charset=utf-8 1437.3299ms
+2022-09-15 15:12:58.781 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/request-context - -
+2022-09-15 15:12:58.787 +05:30 [INF] HTTP GET /request-context ({UserId}) responded 404 in 0.6414ms
+2022-09-15 15:12:58.794 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/request-context - - - 404 0 - 12.9339ms
+2022-09-15 15:13:33.236 +05:30 [INF] Now listening on: https://localhost:7028
+2022-09-15 15:13:33.254 +05:30 [INF] Now listening on: http://localhost:5028
+2022-09-15 15:13:33.259 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-15 15:13:33.260 +05:30 [INF] Hosting environment: Development
+2022-09-15 15:13:33.261 +05:30 [INF] Content root path: C:\Users\danis\source\repos\Generic_Repository_For_Models\Generic_Repository_For_Models\
+2022-09-15 15:13:33.690 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/index.html - -
+2022-09-15 15:13:33.851 +05:30 [INF] HTTP GET /swagger/index.html ({UserId}) responded 200 in 123.3116ms
+2022-09-15 15:13:33.860 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/index.html - - - 200 - text/html;charset=utf-8 171.8905ms
+2022-09-15 15:13:33.872 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - -
+2022-09-15 15:13:33.875 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 3.9141ms
+2022-09-15 15:13:33.896 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_vs/browserLink - -
+2022-09-15 15:13:33.908 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 12.3494ms
+2022-09-15 15:13:34.168 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - -
+2022-09-15 15:13:34.261 +05:30 [INF] HTTP GET /swagger/v1/swagger.json ({UserId}) responded 200 in 92.0607ms
+2022-09-15 15:13:34.265 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 97.5297ms
+2022-09-15 15:13:46.189 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/index.html/request-context - -
+2022-09-15 15:13:46.198 +05:30 [INF] HTTP GET /swagger/index.html/request-context ({UserId}) responded 404 in 5.0567ms
+2022-09-15 15:13:46.208 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/index.html/request-context - - - 404 0 - 18.7737ms
+2022-09-15 15:13:52.947 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/request-context - -
+2022-09-15 15:13:52.950 +05:30 [INF] HTTP GET /swagger/request-context ({UserId}) responded 404 in 0.2278ms
+2022-09-15 15:13:52.953 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/request-context - - - 404 0 - 5.7531ms
+2022-09-15 15:14:01.106 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/request-context - -
+2022-09-15 15:14:01.114 +05:30 [INF] Executing endpoint 'HTTP: GET /request-context'
+2022-09-15 15:14:01.121 +05:30 [INF] Executed endpoint 'HTTP: GET /request-context'
+2022-09-15 15:14:01.126 +05:30 [INF] HTTP GET /request-context (Danish) responded 200 in 16.8583ms
+2022-09-15 15:14:01.132 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/request-context - - - 200 0 - 26.0396ms
+2022-09-15 15:14:01.199 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/favicon.ico - -
+2022-09-15 15:14:01.203 +05:30 [INF] HTTP GET /favicon.ico ({UserId}) responded 404 in 0.1245ms
+2022-09-15 15:14:01.207 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/favicon.ico - - - 404 0 - 7.5968ms
+2022-09-15 15:21:12.924 +05:30 [INF] Now listening on: https://localhost:7028
+2022-09-15 15:21:12.949 +05:30 [INF] Now listening on: http://localhost:5028
+2022-09-15 15:21:12.957 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-15 15:21:12.958 +05:30 [INF] Hosting environment: Development
+2022-09-15 15:21:12.959 +05:30 [INF] Content root path: C:\Users\danis\source\repos\Generic_Repository_For_Models\Generic_Repository_For_Models\
+2022-09-15 15:21:13.641 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/index.html - -
+2022-09-15 15:21:13.941 +05:30 [INF] HTTP GET /swagger/index.html ({UserId}) responded 200 in 223.2163ms
+2022-09-15 15:21:13.952 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - -
+2022-09-15 15:21:13.961 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 8.6633ms
+2022-09-15 15:21:13.961 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/index.html - - - 200 - text/html;charset=utf-8 324.1467ms
+2022-09-15 15:21:13.983 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_vs/browserLink - -
+2022-09-15 15:21:14.005 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 21.9258ms
+2022-09-15 15:21:14.310 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - -
+2022-09-15 15:21:14.463 +05:30 [INF] HTTP GET /swagger/v1/swagger.json ({UserId}) responded 200 in 148.7047ms
+2022-09-15 15:21:14.467 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 157.1991ms
+2022-09-15 15:21:22.031 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/api/User/GetAllStudents - -
+2022-09-15 15:21:22.050 +05:30 [INF] Executing endpoint 'GenericRepository.Controllers.UserController.GetStudentAsync (GenericRepository)'
+2022-09-15 15:21:22.098 +05:30 [INF] Route matched with {action = "GetStudent", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[GenericRepository.Model.Student]] GetStudentAsync() on controller GenericRepository.Controllers.UserController (GenericRepository).
+2022-09-15 15:21:24.392 +05:30 [INF] Entity Framework Core 6.0.8 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.8' with options: None
+2022-09-15 15:21:24.403 +05:30 [INF] I am inside Log
+2022-09-15 15:21:24.921 +05:30 [INF] Sleeping completed in 511.5 ms
+2022-09-15 15:21:25.980 +05:30 [INF] Executed DbCommand (98ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Class], [s].[Marks], [s].[Name]
+FROM [Students] AS [s]
+2022-09-15 15:21:26.317 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[GenericRepository.Model.Student, GenericRepository, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-15 15:21:26.354 +05:30 [INF] Executed action GenericRepository.Controllers.UserController.GetStudentAsync (GenericRepository) in 4232.2282ms
+2022-09-15 15:21:26.361 +05:30 [INF] Executed endpoint 'GenericRepository.Controllers.UserController.GetStudentAsync (GenericRepository)'
+2022-09-15 15:21:26.365 +05:30 [INF] HTTP GET /api/User/GetAllStudents ({UserId}) responded 200 in 4331.8603ms
+2022-09-15 15:21:26.389 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/api/User/GetAllStudents - - - 200 - application/json;+charset=utf-8 4358.4091ms
+2022-09-15 15:41:58.226 +05:30 [INF] Now listening on: https://localhost:7028
+2022-09-15 15:41:58.250 +05:30 [INF] Now listening on: http://localhost:5028
+2022-09-15 15:41:58.255 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-15 15:41:58.257 +05:30 [INF] Hosting environment: Development
+2022-09-15 15:41:58.258 +05:30 [INF] Content root path: C:\Users\danis\source\repos\Generic_Repository_For_Models\Generic_Repository_For_Models\
+2022-09-15 15:41:59.131 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/index.html - -
+2022-09-15 15:41:59.364 +05:30 [INF] HTTP GET /swagger/index.html ({UserId}) responded 200 in 167.9136ms
+2022-09-15 15:41:59.366 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - -
+2022-09-15 15:41:59.377 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 10.2115ms
+2022-09-15 15:41:59.378 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/index.html - - - 200 - text/html;charset=utf-8 249.9866ms
+2022-09-15 15:41:59.388 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_vs/browserLink - -
+2022-09-15 15:41:59.421 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 32.9040ms
+2022-09-15 15:41:59.595 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - -
+2022-09-15 15:41:59.719 +05:30 [INF] HTTP GET /swagger/v1/swagger.json ({UserId}) responded 200 in 122.2865ms
+2022-09-15 15:41:59.723 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 127.6684ms
+2022-09-15 15:57:00.909 +05:30 [INF] Now listening on: https://localhost:7028
+2022-09-15 15:57:00.930 +05:30 [INF] Now listening on: http://localhost:5028
+2022-09-15 15:57:00.936 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-15 15:57:00.937 +05:30 [INF] Hosting environment: Development
+2022-09-15 15:57:00.939 +05:30 [INF] Content root path: C:\Users\danis\source\repos\Generic_Repository_For_Models\Generic_Repository_For_Models\
+2022-09-15 15:57:01.478 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/index.html - -
+2022-09-15 15:57:01.649 +05:30 [INF] HTTP GET /swagger/index.html ({UserId}) responded 200 in 117.2636ms
+2022-09-15 15:57:01.660 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/index.html - - - 200 - text/html;charset=utf-8 184.5836ms
+2022-09-15 15:57:01.660 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - -
+2022-09-15 15:57:01.666 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 5.5393ms
+2022-09-15 15:57:01.684 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_vs/browserLink - -
+2022-09-15 15:57:01.701 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 16.3487ms
+2022-09-15 15:57:01.810 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - -
+2022-09-15 15:57:01.902 +05:30 [INF] HTTP GET /swagger/v1/swagger.json ({UserId}) responded 200 in 88.1705ms
+2022-09-15 15:57:01.905 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 95.2358ms
+2022-09-15 15:57:09.949 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/request-context - -
+2022-09-15 15:57:09.963 +05:30 [INF] Executing endpoint 'HTTP: GET /request-context'
+2022-09-15 15:57:09.969 +05:30 [INF] Executed endpoint 'HTTP: GET /request-context'
+2022-09-15 15:57:09.971 +05:30 [INF] HTTP GET /request-context (Danish) responded 200 in 18.0426ms
+2022-09-15 15:57:09.975 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/request-context - - - 200 0 - 25.5404ms
+2022-09-15 16:01:11.469 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/index.html - -
+2022-09-15 16:01:11.483 +05:30 [INF] HTTP GET /swagger/index.html ({UserId}) responded 200 in 9.3559ms
+2022-09-15 16:01:11.487 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/index.html - - - 200 - text/html;charset=utf-8 18.1483ms
+2022-09-15 16:01:11.520 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_vs/browserLink - -
+2022-09-15 16:01:11.520 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - -
+2022-09-15 16:01:11.534 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 13.3083ms
+2022-09-15 16:01:11.538 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 18.3423ms
+2022-09-15 16:01:12.149 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - -
+2022-09-15 16:01:12.156 +05:30 [INF] HTTP GET /swagger/v1/swagger.json ({UserId}) responded 200 in 4.1938ms
+2022-09-15 16:01:12.161 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7028/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 11.1152ms

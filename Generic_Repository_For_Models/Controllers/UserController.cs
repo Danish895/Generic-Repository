@@ -4,6 +4,7 @@ using GenericRepository.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.Documents;
 using Newtonsoft.Json;
+using SerilogTimings;
 using System.Net;
 using System.Text;
 
@@ -13,24 +14,21 @@ namespace GenericRepository.Controllers
     [ApiController]
     public class UserController : ControllerBase 
     {
+        private readonly ILogger<UserController> _logger;
         private IGenericService<Student> _studentService { get; set; }
         private IGenericService<Employee> _employeeService { get; set; }
-       // public IServiceProvider Provider { get; set; }
 
         //public UserController(IGenericService<Student> StudentService, IGenericService<Employee> EmployeeService) 
         //{
-            
-        //    //_studentService = Provider.GetRequiredService<IGenericService<Student>>();
-        //    //_employeeService = Provider.GetRequiredService<IGenericService<Employee>>();
-        //    //_employeeService = (IGenericService<Employee>)service;
         //    _employeeService = EmployeeService;
         //    _studentService = StudentService;
         //}
 
-        public UserController(IServiceProvider Provider)
+        public UserController(IServiceProvider Provider, ILogger<UserController> logger)
         {
             _studentService = Provider.GetRequiredService<IGenericService<Student>>();
             _employeeService = Provider.GetRequiredService<IGenericService<Employee>>();
+            _logger = logger;
         }
 
 
@@ -38,6 +36,12 @@ namespace GenericRepository.Controllers
         [HttpGet]
         public async Task<IEnumerable<Student>> GetStudentAsync()
         {
+            _logger.LogInformation("I am inside Log");
+            using (Operation.Time("Sleeping"))
+            {
+                Thread.Sleep(500);
+            }
+
             return await _studentService.GetAsyncAll();
         }
 
@@ -106,7 +110,6 @@ namespace GenericRepository.Controllers
 
         [Route("AddStudentWithHttpCallAsync")]
         [HttpPost]
-
         public async Task<bool> AddStudentWithHttpCallAsync(Student student)
         {
             var url = "https://localhost:7028/api/User/AddStudent";
@@ -117,6 +120,7 @@ namespace GenericRepository.Controllers
 
             var data = new StringContent(json, Encoding.UTF8, "application/json");
 
+            var msg = new HttpRequestMessage(HttpMethod.Post, url);
             var response = await client.PostAsync(url, data);
             var responseContent = await response.Content.ReadAsStringAsync();
             return true;
